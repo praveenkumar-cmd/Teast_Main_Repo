@@ -9,7 +9,7 @@
 
 /* Make sure __LONG32 is defined.  */
 #include <_mingw.h>
-
+/* simple chnage and again*/
 typedef unsigned char	u_char;
 typedef unsigned short	u_short;
 typedef unsigned int	u_int;
