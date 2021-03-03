@@ -4,23 +4,7 @@
  * No warranty is given; refer to the file DISCLAIMER within this package.
  */
 
-#if defined(_MSC_VER) && !defined(_MSC_EXTENSIONS)
-#define NONAMELESSUNION		1
-#endif
-#if defined(NONAMELESSSTRUCT) && \
-   !defined(NONAMELESSUNION)
-#define NONAMELESSUNION		1
-#endif
-#if defined(NONAMELESSUNION)  && \
-   !defined(NONAMELESSSTRUCT)
-#define NONAMELESSSTRUCT	1
-#endif
-#if !defined(__GNU_EXTENSION)
-#if defined(__GNUC__) || defined(__GNUG__)
-#define __GNU_EXTENSION		__extension__
-#else
-#define __GNU_EXTENSION
-#endif
+
 #endif /* __extension__ */
 
 #ifndef __ANONYMOUS_DEFINED
